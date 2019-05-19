@@ -1,3 +1,4 @@
+
 class Doctor
   attr_accessor :name
   @@all = []
@@ -20,6 +21,6 @@ class Doctor
   end
   
   def patients
-    appointments.map{ |appointment| apointment.patient}
+    appointments.map{ |appointment| binding.pry apointment.patient}
   end
 end
